@@ -1,0 +1,9 @@
+services:
+  nginxweb:
+    build: .
+    image: elakiyadocker/custom-nginx:v1
+    container_name: customnginx
+    ports:
+      - "80:80"
+    volumes:
+      - D:\nginx-data:/usr/share/nginx/html
